@@ -1,23 +1,27 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-string nome = "seu nome";
-Console.WriteLine($"seja bemVindo(a){nome}");
-string cidade = "Ipiabas";
-Console.WriteLine($"eu moro em {cidade}");
 
-int idade = 16;
-Console.WriteLine($"minha idade {idade}");
-byte valor = 255;
-valor += 1;// valor = valor +1;
-Console.WriteLine($"valor = {valor}");
-decimal salario = 100000.50m;
-float altura = 1.64f;
-float peso = 62.5f;
-double altura = altura * 0.0000000001;
-float altura = 1.76f;
-double alturaN = *0.000000001;
-Console.WriteLine($"sua altura é {altura}");
-Console.WriteLine($" se voce pudesse ser o homen formiga, teria a altura {alturaN}nm");
-Console.WriteLine($" o peso informado foi{peso}");
+// Exercicios com Vetores 
+/*
+ * crie um vetor para armazenar as ideias de 5 pessoas e ao final imprima:
+ * 1 a pssoa mais nova 
+ * 2 a pessoa mais velha
+ * 3 a media das idades
+ * 4 todas as idades ímpares
+ * 5 todas as idades pares
+ */
+Byte[] idades = new byte[5];
+for(int i = 0; i < 5; i++)
+{
+    Console.WriteLine($"informe a {i+1}ª idade:");
+    idades[i] = byte.Parse(Console.ReadLine());
+}
+
+foreach(int idade in idades)
+{
+    Console.WriteLine(idade);
+}
+
+
+
 
 
